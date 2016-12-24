@@ -7,6 +7,7 @@ public class CardTypes : MonoBehaviour {
 
 	CardType type;
 	public int cost;
+	public string name;
 
 	//minion card variables
 	public int health;
@@ -20,7 +21,10 @@ public class CardTypes : MonoBehaviour {
 	void Start () {
 		//retrieve card info from DB
 		string sql = "";
+		sql = "SELECT * FROM Cards WHERE Title = name";
 
+		//here we would put the sql data readers and other things like that
+		//still trying to figure out how to setup DB with unity
 
 	
 	}
